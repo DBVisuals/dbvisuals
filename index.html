@@ -39,7 +39,7 @@
                 <span class="close-btn">&times;</span>
                 <h3 id="modal-title">Request Form</h3>
                 
-                <form id="serviceForm" action="https://formspree.io/f/xdkqygwn" method="POST">
+                <form id="serviceForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="Service_Type" id="serviceTypeInput" value="">
                     
                     <label for="name">Your Name:</label>
@@ -52,7 +52,13 @@
                     <input type="email" id="email" name="Email" required>
 
                     <label for="requestText">Request Details (Max 200 words):</label>
-                    <textarea id="requestText" name="Request_Details" maxlength="1200" rows="6" required></textarea>
+<textarea id="requestText" name="Request_Details" maxlength="1200" rows="6" required></textarea>
+
+<label for="fileUpload">Upload Files (Images/Videos):</label>
+<input type="file" id="fileUpload" name="customer_files" multiple accept="image/*,video/*,.zip,.rar">
+<button type="submit">
+    <i class="fas fa-paper-plane"></i> Send Request
+</button>
                     <button type="submit">
                         <i class="fas fa-paper-plane"></i> Send Request
                     </button>
@@ -71,6 +77,7 @@
 </body>
 
 </html>
+
 
 
 
